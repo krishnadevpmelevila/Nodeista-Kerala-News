@@ -1,0 +1,31 @@
+<form method="post" action="/">
+  <div class="btn-group " style="background-color: wheat; width: 100%;" role="group"
+    aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="src" value="all" id="btnradio1" autocomplete="off" {{#if all}} checked{{/if}} >
+    <label class="btn btn-outline-primary" for="btnradio1">All News  </label>
+
+    <input type="radio" class="btn-check" name="src" value="24n" id="btnradio2" autocomplete="off" {{#if 24n}} checked{{/if}}>
+    <label class="btn btn-outline-primary" for="btnradio2">24 News</label>
+
+    <input type="radio" class="btn-check" name="src" value="man" id="btnradio3" autocomplete="off" {{#if man}} checked{{/if}}>
+    <label class="btn btn-outline-primary" for="btnradio3">Manorama</label>
+
+    <input type="radio" class="btn-check" name="src" value="mat" id="btnradio4" autocomplete="off" {{#if mat}} checked{{/if}}>
+    <label class="btn btn-outline-primary" for="btnradio4">Mathrubhumi</label>
+
+    <input type="radio" class="btn-check" name="src" value="asi" id="btnradio5" autocomplete="off" {{#if asi}} checked{{/if}}>
+    <label class="btn btn-outline-primary" for="btnradio5">Asianet</label>
+
+    <input type="radio" class="btn-check" name="src" value="18n" id="btnradio6" autocomplete="off" {{#if 18n}} checked{{/if}}>
+    <label class="btn btn-outline-primary" for="btnradio6">News 18</label>
+
+    <input type="radio" class="btn-check" name="src" value="med" id="btnradio7" autocomplete="off" {{#if med}} checked{{/if}}>
+    <label class="btn btn-outline-primary" for="btnradio7">Media One</label>
+     
+  </div>
+<script>
+  $('input[type=radio]').on('change', function() {
+    $(this).closest("form").submit();
+});
+</script>
+</form>

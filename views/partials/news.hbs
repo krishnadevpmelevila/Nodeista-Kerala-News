@@ -1,0 +1,26 @@
+<div class="container">
+    {{#each data}}
+   
+    <div class="well">
+        <div class="media">
+            <a class="pull-left" href="{{this.url}}">
+                <img class="media-object" style="align-content: center;" src="{{this.image}}">
+            </a>
+            
+             <a href="{{this.url}}">
+            <div class="pd-2 mt-3 media-body container">
+                <h3 class="media-heading"> <span style="color: #6d4b0c;">Headline:</span>  {{this.title}}</h3>
+                
+                <ul class="list-inline list-unstyled">
+                    <li><span style="color: #6d4b0c;">Source: </span>  {{this.source}}</li>
+                    
+                </ul>
+            </div>
+            
+            </a>
+        </div>
+    </div>
+    
+    {{/each}}
+   
+</div>
