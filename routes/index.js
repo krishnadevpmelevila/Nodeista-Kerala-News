@@ -87,7 +87,7 @@ router.post('/', (req, res) => {
     };
   
     axios.request(options).then(function (response) {
-      res.render('index',{'data':response.data,"name":"News 18","med":true})
+      res.render('index',{'data':response.data,"name":"Media One","med":true})
     }).catch(function (error) {
       console.error(error);
     });
